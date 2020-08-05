@@ -1,3 +1,9 @@
-# Basic Example with React-Router-Bootstrap
+# MVP of NAVEKA systems web interface
 
-A simple [create-react-app](CRA-README.md) setup, showcasing how it works with React-Router-Bootstrap
+To build a project run the following command:
+- npm run-script build
+
+
+To start local server run:
+- npm start
+- go to http://localhost:3000/
