@@ -37,7 +37,7 @@ class App extends Component {
    * This function establishes the connect with the websocket and also ensures constant reconnection if connection closes
    */
   connect = () => {
-    var ws = new WebSocket("ws://localhost:81",['arduino']);
+    var ws = new WebSocket('ws://'+document.location.host+':81/',['arduino']);
     let that = this; // cache the this
     var connectInterval;
 
