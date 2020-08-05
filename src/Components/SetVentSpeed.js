@@ -10,7 +10,7 @@ const SetVentSpeed = () => {
     const [ value, setValue ] = React.useState(1);
 
     return (
-
+                <div>
                 <RangeSlider
                     value={value}
                     onChange={e => setValue(e.target.value)}
@@ -18,6 +18,7 @@ const SetVentSpeed = () => {
                     max={3}
                 />
 
+                </div>
     );
 
 };

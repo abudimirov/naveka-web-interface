@@ -21,7 +21,7 @@ class Setting extends Component {
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>
                         <InputGroup.Text id="basic-addon1">
-                            {this.props.name}
+                            <div className="setting-label">{this.props.name}</div>
                             <OverlayTrigger trigger="click" placement="top" overlay={popover}>
                                 <span className="tooltip-block">
                                     <span className="tooltip-link">?</span>

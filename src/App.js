@@ -4,6 +4,8 @@ import { MemoryRouter, Switch, Route } from 'react-router-dom';
 import Settings from "./Components/Settings";
 import Wifi from "./Components/Wifi";
 import Home from "./Components/Home";
+import Timetable from "./Components/Timetable";
+
 
 
 import Container from 'react-bootstrap/Container';
@@ -96,6 +98,9 @@ class App extends Component {
                 <LinkContainer to="/">
                   <Nav.Link>Главная</Nav.Link>
                 </LinkContainer>
+                <LinkContainer to="/timetable">
+                  <Nav.Link>Расписание</Nav.Link>
+                </LinkContainer>
                 <LinkContainer to="/wifi">
                   <Nav.Link>Подключение к Wi-Fi</Nav.Link>
                 </LinkContainer>
@@ -112,6 +117,9 @@ class App extends Component {
                 </Route>
                 <Route path="/wifi">
                   <Wifi />
+                </Route>
+                <Route path="/timetable">
+                  <Timetable />
                 </Route>
                 <Route path="/">
                   <Home />

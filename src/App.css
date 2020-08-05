@@ -30,3 +30,6 @@
   position: relative;
   cursor: pointer;
 }
+.setting-label {
+  min-width: 7vw;
+}

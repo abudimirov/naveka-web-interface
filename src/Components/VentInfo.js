@@ -5,21 +5,25 @@ import Alert from "react-bootstrap/Alert";
 
 class VentInfo extends Component {
     render() {
-        const isOn = this.props.ventstate;
+        const isAutoSpeed = this.props.auto;
+        const ventSpeed = this.props.ventspeed;
         let vent_state;
-        if (isOn) {
-            vent_state = <Alert variant="success">Установка включена</Alert>;
+        let speed_state;
+
+        if (isAutoSpeed) {
+            speed_state = "авто";
         } else {
-            vent_state = <Alert variant="danger">Установка выключена</Alert>;
+            speed_state = ventSpeed;
         }
         return (
             <Card border="dark">
                 <Card.Header>Информация</Card.Header>
                 <Card.Body>
                     <Card.Text>
-                        {vent_state}
+                        <Alert variant="success">Установка включена</Alert>
                         t° в канале: {this.props.temperature} °C <br />
-                        скорость вентилятора: {this.props.ventspeed} <br />
+                        t° уставки: °C <br />
+                        скорость вентилятора: {speed_state} <br />
                         режим работы: <br />
                     </Card.Text>
                 </Card.Body>

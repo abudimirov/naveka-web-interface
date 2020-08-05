@@ -12,7 +12,8 @@ function saveNetworkSettings(e) {
     var data = {ssid:ssid, password:password};
     console.log(data);
     var xhr = new XMLHttpRequest();
-    var url = "/wifi";
+    var url = "/";
+
     xhr.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             // Typical action to be performed when the document is ready:
@@ -20,7 +21,8 @@ function saveNetworkSettings(e) {
                 console.log(xhr.responseText);
             }
         }
-    };
+    }
+    ;
     xhr.open("POST", url, true);
     xhr.send(JSON.stringify(data));
 }
@@ -31,6 +33,7 @@ class Wifi extends Component {
             <div>
                 <h1 className="mt-3 mb-3">Подключение к Wi-Fi</h1>
                 <Jumbotron>
+                    <p>Подключите установку к домашней сети Wi-Fi и сможете управлять устройством удаленно.</p>
                     <InputGroup className="mb-3">
                         <InputGroup.Prepend>
                             <InputGroup.Text id="label-ssid">Имя сети (SSID)</InputGroup.Text>
