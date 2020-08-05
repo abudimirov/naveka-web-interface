@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Alert from "react-bootstrap/Alert";
-import InputGroup from "react-bootstrap/InputGroup"
-import FormControl from "react-bootstrap/FormControl"
 import Button from "react-bootstrap/Button";
-import Badge from "react-bootstrap/Badge";
 import Popover from "react-bootstrap/Popover";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Setting from "./Setting";
 
 const popover = (
