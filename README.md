@@ -1,4 +1,4 @@
-# MVP of NAVEKA systems web interface
+# MVP - NAVEKA systems web interface
 
 To build a project run the following command:
 - npm run-script build
