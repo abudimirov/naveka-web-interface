@@ -8,7 +8,7 @@ class Home extends Component {
         super(props);
         this.handleOnClick = this.handleOnClick.bind(this);
         this.handleOffClick = this.handleOffClick.bind(this);
-        this.state = {isOn: false};
+        this.state = {isOn: true};
     }
 
     handleOnClick() {

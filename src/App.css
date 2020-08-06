@@ -33,3 +33,18 @@
 .setting-label {
   min-width: 7vw;
 }
+.card_vent {
+  background: #a8d1f5!important;
+  color: #fff;
+  cursor: pointer;
+}
+.card_heat {
+  background: #feb900!important;
+  color: #fff;
+  cursor: pointer;
+}
+.card_cool {
+  background: #005cbf!important;
+  color: #fff;
+  cursor: pointer;
+}
