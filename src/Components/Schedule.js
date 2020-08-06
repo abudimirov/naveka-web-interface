@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Jumbotron from "react-bootstrap/Jumbotron";
 
 
-class Timetable extends Component {
+class Schedule extends Component {
     render() {
         return (
             <div>
@@ -15,4 +15,4 @@ class Timetable extends Component {
     }
 }
 
-export default Timetable;
+export default Schedule;

@@ -4,7 +4,7 @@ import { MemoryRouter, Switch, Route } from 'react-router-dom';
 import Settings from "./Components/Settings";
 import Wifi from "./Components/Wifi";
 import Home from "./Components/Home";
-import Timetable from "./Components/Timetable";
+import Schedule from "./Components/Schedule";
 
 
 
@@ -37,7 +37,7 @@ class App extends Component {
    * This function establishes the connect with the websocket and also ensures constant reconnection if connection closes
    */
   connect = () => {
-    var ws = new WebSocket("ws://localhost:81",['arduino']);
+    var ws = new WebSocket("ws://192.168.1.4:81/",['arduino']);
     let that = this; // cache the this
     var connectInterval;
 
@@ -98,7 +98,7 @@ class App extends Component {
                 <LinkContainer to="/">
                   <Nav.Link>Главная</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/timetable">
+                <LinkContainer to="/schedule">
                   <Nav.Link>Расписание</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/wifi">
@@ -118,8 +118,8 @@ class App extends Component {
                 <Route path="/wifi">
                   <Wifi />
                 </Route>
-                <Route path="/timetable">
-                  <Timetable />
+                <Route path="/schedule">
+                  <Schedule />
                 </Route>
                 <Route path="/">
                   <Home />

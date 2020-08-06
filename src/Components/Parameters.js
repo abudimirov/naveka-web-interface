@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import VentInfo from "./VentInfo";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import SetTemp from "./SetTemp";
 
 
 class Parameters extends Component {
@@ -45,6 +46,8 @@ class Parameters extends Component {
                             Скорость вентилятора (от 1 до 3)
                             <SetVentSpeed />
                             {set_auto_vent}
+                            Температура уставки (от 15 до 30)
+                            <SetTemp />
                         </Col>
                         <Col xs={12} lg={4}>
                             <VentInfo temperature="20" ventspeed="2" auto={autoVent}/>

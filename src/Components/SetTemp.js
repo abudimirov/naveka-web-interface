@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import RangeSlider from 'react-bootstrap-range-slider';
 
 
-const SetVentSpeed = () => {
+const SetTemp = () => {
 
 
     const [ value, setValue ] = React.useState(1);
@@ -12,8 +12,8 @@ const SetVentSpeed = () => {
                 <RangeSlider
                     value={value}
                     onChange={e => setValue(e.target.value)}
-                    min={1}
-                    max={3}
+                    min={15}
+                    max={30}
                 />
 
                 </div>
@@ -21,4 +21,4 @@ const SetVentSpeed = () => {
 
 };
 
-export default SetVentSpeed;
+export default SetTemp;
